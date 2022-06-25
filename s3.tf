@@ -1,9 +1,8 @@
-resource "aws_s3_bucket" "b" {
-  bucket = "AWS-Bucket-baba"
-  acl    = "private"
+resource "aws_s3_bucket" "my_bucket" {
+    bucket = "qt3data"
 
   tags = {
-    Name        = "My bucket"
+    Name        = "My_bucket"
     Environment = "Dev"
   }
 }
